@@ -1,0 +1,9 @@
+<section class="blog-feed">
+  {% for item in collections.blog %}
+  <time class="blog__date" datetime="{{ item.data.date | w3DateFilter }}">{{
+    item.data.date | dateReadable
+  }}</time>
+
+  <a href="{{ item.url }}">{{ item.data.title }}</a>
+  {% endfor %}
+</section>

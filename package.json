@@ -1,0 +1,38 @@
+{
+  "name": "atulpatel.in",
+  "version": "0.0.1",
+  "description": "Blog and portfolio website of Atul Patel.",
+  "main": ".eleventy.js",
+  "scripts": {
+    "clean": "rm -rf _site",
+    "start": "npm-run-all clean --parallel dev:*",
+    "build": "npm-run-all clean --parallel build:*",
+    "dev:postcss": "postcss src/assets/css/index.css -o _site/assets/css/main.css --config ./postcss.config.js -w",
+    "build:postcss": "postcss src/assets/css/index.css -o _site/assets/css/main.css --config ./postcss.config.js",
+    "dev:eleventy": "npx @11ty/eleventy --serve --incremental",
+    "build:eleventy": "npx @11ty/eleventy",
+    "debug": "DEBUG=* npx @11ty/eleventy"
+  },
+  "keywords": [
+    "Atul Patel"
+  ],
+  "author": "Atul Patel",
+  "license": "ISC",
+  "browserslist": [
+    "last 4 versions",
+    "> 1%",
+    "maintained node versions"
+  ],
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-img": "^2.0.0",
+    "@11ty/eleventy-navigation": "^0.3.2",
+    "@11ty/eleventy-plugin-rss": "^1.1.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+    "markdown-it-anchor": "^8.4.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.0.2"
+  }
+}

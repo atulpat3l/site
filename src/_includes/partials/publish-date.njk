@@ -1,0 +1,3 @@
+{% if date %}
+<time datetime="{{ date | w3DateFilter }}">{{ date | dateReadable }}</time>
+{% endif %}

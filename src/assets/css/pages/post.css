@@ -1,0 +1,12 @@
+.post {
+  max-width: 50rem;
+  margin: 0 auto;
+  --flow-space: 0.4em;
+}
+
+.post h2,
+h3,
+h4,
+h5 {
+  margin-top: 1em;
+}

@@ -1,0 +1,17 @@
+.footer {
+  margin-top: 2rem;
+  color: var(--color-text-offset);
+  padding-block: 3em 1.5em;
+  text-align: center;
+}
+
+.footer a {
+  color: inherit;
+  display: inline-block;
+  padding: 0.25rem;
+  margin-inline: 1em;
+}
+
+.footer a svg {
+  width: 1.5em;
+}

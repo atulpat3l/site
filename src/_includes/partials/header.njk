@@ -1,0 +1,27 @@
+<header class="container">
+  <nav class="fs-400 nav">
+    <div class="logo">
+      <a href="/" rel="home" aria-label="G0 To Homepage" class="logo__link flex"
+        ><img
+          class="logo__img"
+          src="/assets/img/atulpatel.jpg"
+          alt="atul patel image"
+          width="48"
+          height="48"
+        /><span class="logo__text">{{ metadata.author.name }}</span></a
+      >
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      
+    </div>
+
+    <ul class="nav__list">
+      {% for item in navigation %}
+      <li class="nav__item">
+        <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }} class="nav__link">{{ item.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

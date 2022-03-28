@@ -1,0 +1,9 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}   
+<article class="post flow">       
+     <h1>{{ title }}</h1>
+     {% include "partials/publish-date.njk" %} 
+     {{content | safe }}
+</article>
+{% endblock %}

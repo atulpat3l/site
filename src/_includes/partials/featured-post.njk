@@ -1,0 +1,8 @@
+<section class="container featured">
+  <h2 class="featured__heading">Featured Posts</h2>
+  {% for item in collections.featuredPosts %}
+  <a href="{{ item.url }}">
+    <h3 class="featured__post">{{ item.data.title }}</h3></a
+  >
+  {% endfor %}
+</section>

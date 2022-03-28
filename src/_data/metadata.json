@@ -1,0 +1,11 @@
+{
+  "title": "Atul Patel",
+  "subtitle": "I am frontend developer",
+  "description": "Developer",
+  "url": "/",
+  "author": {
+    "name": "Atul Patel",
+    "email": "me@atulpatel.in",
+    "twitter": "https://twitter.com/atulpat3l"
+  }
+}
